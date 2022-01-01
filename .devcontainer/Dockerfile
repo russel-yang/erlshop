@@ -33,6 +33,7 @@ ENV SHELL /bin/zsh
 
 # zsh plugins
 RUN cd $HOME && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+RUN git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # zsh configuration
 ADD .zshrc $HOME
