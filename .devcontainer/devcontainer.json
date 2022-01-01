@@ -1,4 +1,7 @@
 {
   "dockerFile": "Dockerfile",
-  "remoteUser": "russel.yang"
+  "remoteUser": "russel.yang",
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/russel.yang/.ssh,type=bind,consistency=cached"
+  ]
 }
