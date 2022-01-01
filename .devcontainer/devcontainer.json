@@ -1,3 +1,4 @@
 {
   "dockerFile": "Dockerfile",
+  "remoteUser": "russel.yang"
 }
